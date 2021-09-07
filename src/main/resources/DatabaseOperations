@@ -1,0 +1,84 @@
+-- Database operations ---
+
+create schema microservices;
+
+use microservices;
+create table userdetails
+(
+   username varchar(100),
+   hobbies varchar(200),
+   city varchar(300),
+   Areaofinterest varchar(230),
+   requesttype varchar(20)
+) ;
+
+
+alter table userdetails
+add column id INTEGER primary KEY
+;
+
+
+select *
+from userdetails
+;
+
+
+alter table userdetails
+add column id INTEGER primary KEY
+;
+
+
+alter table userdetails
+modify column id INTEGER auto_increment
+;
+
+
+// Resetting the auto increment value to 1 
+
+
+alter table userdetails auto_increment=1
+;
+
+//  experience table 
+
+use microservices;
+
+create table experience
+(
+   employeeid DECIMAL PRIMARY KEY,
+   companyname varchar(100),
+   location varchar(200),
+   months varchar(250)
+   );
+   
+   
+   
+   
+   
+   
+   alter table experience
+   modify employeeid INTEGER
+   ;
+   
+   select Cname,loc,durationinmonths
+   from experience
+   group by Cname,loc,durationinmonths
+   ;
+   
+   select max(employeeid)
+                      from experience
+                      group by Cname,loc,durationinmonths
+                      ;
+   
+   delete from experience
+   where employeeid in ( select * from ( select max(employeeid)
+                         from experience
+                         group by Cname,loc,durationinmonths ) inntable
+                      )
+                      ;
+                      
+                      
+select *
+from experience
+;
+ 
