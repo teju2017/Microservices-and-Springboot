@@ -1,0 +1,20 @@
+==> You can use the below command to get the running details
+
+WSDL :- http://localhost:8080/service/studentDetailsWsdl.wsdl
+
+URL to call:- http://localhost:8080/service/student-details
+
+Content-type in the headers should be "text/xml"
+
+===> Soap request ====================
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SOAP-ENV:Body>
+		<m:StudentDetailsRequest xmlns:m="http://www.tejas.com/xml/school">
+			<m:name>Tejas</m:name>
+		</m:StudentDetailsRequest>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
