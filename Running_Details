@@ -6,7 +6,9 @@ URL to call:- http://localhost:8080/service/student-details
 
 Content-type in the headers should be "text/xml"
 
-Type of request:- POST
+Type of request:- POST 
+
+Note:- GET request will not work when firing the request from the Postman
 
 ===> Soap request ====================
 
