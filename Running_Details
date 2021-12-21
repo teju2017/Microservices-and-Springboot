@@ -6,6 +6,8 @@ URL to call:- http://localhost:8080/service/student-details
 
 Content-type in the headers should be "text/xml"
 
+Type of request:- POST
+
 ===> Soap request ====================
 
 <?xml version="1.0" encoding="UTF-8"?>
