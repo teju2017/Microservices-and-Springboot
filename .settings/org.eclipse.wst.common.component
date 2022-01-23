@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="CLIENT_SOAPWS">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="CLIENT_SOAPWS"/>
+        <property name="java-output-path" value="/CLIENT_SOAPWS/build/classes"/>
+    </wb-module>
+</project-modules>
